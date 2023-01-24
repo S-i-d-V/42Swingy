@@ -2,6 +2,7 @@ package Swingy;
 
 //Java
 import java.util.Scanner;
+import java.util.ArrayList;
 
 //My imports
 import Swingy.Model.Hero;
@@ -22,8 +23,10 @@ public class App
 
             switch (userChoice) {
                 case 1:
+                    createHero();
                     break;
                 case 2:
+                    selectHero();
                     break;
                 case 3:
                     quit = true;
@@ -34,6 +37,18 @@ public class App
             }
         }
         input.close();
+    }
+
+    public static void createHero() {
+        //Header
+        System.out.println("Hero creation:");
+        //Add a heroes to the ArrayList
+    }
+
+    public static void selectHero() {
+        //Header
+        System.out.println("Hero creation:");
+        //Display each hero with his uid
     }
 }
 
